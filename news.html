@@ -46,7 +46,7 @@
         align-items: center;
       }
 
-      .main-content{
+      .main-content {
         margin-top: 20%;
       }
     }
@@ -471,7 +471,13 @@
 
   </script>
 
-
+  <script>
+    // Check if the screen width is below a certain threshold (e.g., 1000 pixels)
+    if (window.innerWidth > 900) {
+      // Redirect users from mobile and tablet devices to a different page or show an error message
+      window.location.href = '../../../pages/error.html'; // Redirect to a mobile error page
+    }
+  </script>
 
 
 
