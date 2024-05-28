@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./pulparambil.png">
+  <link rel="icon" type="image/png" href="./pulparambil.png">
   <title>
     Pulparambil Live rate
   </title>
@@ -39,21 +39,9 @@
 
 
   <style>
-    @media only screen and (max-width: 480px) {
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .main-content {
-        margin-top: 20%;
-      }
-    }
-
     body {
       margin: 0;
-      padding: 40px;
+      padding: 0px 400px;
       font-family: "arial", heletica, sans-serif;
       font-size: 24px;
       background-image: url('./67158\ [Converted].png');
@@ -64,140 +52,21 @@
       -ms-animation: 20s linear 0s normal none infinite animate;
       -o-animation: 20s linear 0s normal none infinite animate;
       animation: 20s linear 0s normal none infinite animate;
-
-      color: #005043;
       height: 100vh;
     }
 
-    .row {
-      padding: 5px;
-      margin-left: 10px;
+    .logo {
+      width: 350px;
+      margin-top: 50px;
     }
 
-    .card-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
-      opacity: 90%;
-    }
-
-    .card-logo img {
-      margin-right: 40px;
-    }
-
-    i {
-      font-size: 1.5rem;
-    }
-
-    h4 {
-      color: black;
-      font-weight: bold;
-    }
-
-    .card {
-      border-radius: 20px;
-      margin-left: 10px;
-    }
-
-    .tradingview-widget-container {
-      width: 100%;
+    span {
+      color: #FFF;
+      font-size: 35px;
     }
 
     .rate-card {
       display: none;
-    }
-
-    .card-table {
-      border-collapse: collapse;
-      border-spacing: 5px;
-      opacity: 0.9;
-    }
-
-    table {
-      display: inline-table;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-left: 0px;
-      font-size: 16px;
-      color: #005043;
-    }
-
-    .card-table tbody {
-      margin-top: 12px;
-
-    }
-
-    .card-table tr {
-      background-color: #f9f9f9;
-      /* Light gray background for odd rows */
-    }
-
-    .card-table tbody tr:nth-child(even) {
-      background-color: #e6e6e6;
-      /* Dark gray background for even rows */
-    }
-
-
-
-    .card-table th {
-      background-color: #005043;
-      color: white;
-
-
-    }
-
-    .card-table tbody td {
-      font-size: 12px;
-    }
-
-    .card-table th,
-    .card-table td {
-      padding: 10px;
-      text-align: center;
-    }
-
-    .card-table td {
-      font-weight: bold;
-      font-size: 12px;
-    }
-
-    /* Hover effect for better user experience */
-    .card-table tbody tr:hover {
-      background-color: #d3d3d3;
-      /* Lighter gray on hover */
-    }
-
-    .date-time {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      color: #005043;
-      margin-top: 20px;
-      margin-left: 150px;
-    }
-
-    .date-time h3 {
-      font-size: 3vw;
-      font-weight: 600;
-    }
-
-
-    .row2 {
-      display: flex;
-      flex-direction: row;
-      margin-top: 50px;
-    }
-
-    .row {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .fading-label {
-      transition: color 1s ease;
-      /* Adjust the duration and timing function as needed */
     }
 
     .card200 {
@@ -214,6 +83,7 @@
     .cb {
       display: flex;
       flex-direction: column;
+      padding: 10px 30px;
     }
 
     .cb .text {
@@ -222,23 +92,68 @@
       color: black;
       font-weight: 400;
       line-height: 1.5;
-      font-size: 18px;
+      font-size: 30px;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 0px 10px;
+      }
+
+      .logo {
+        width: 200px;
+        margin-top: 70px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      body {
+        padding: 0px 20px;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      body {
+        padding: 0px 60px;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      body {
+        padding: 0px 150px;
+      }
+
+      .logo {
+        width: 350px;
+        margin-top: 70px;
+      }
+
+      span {
+        font-size: 35px;
+      }
     }
   </style>
 </head>
 
 <body class="d-flex justify-content-center align-items-center">
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-    <div class="col-lg-4 d-flex justify-content-center">
-      <img class="logo" src="./Pulparambil white logo.png" alt="" style="width: 280px; margin-top:5px;">
+    <div class="col-lg-12 d-flex justify-content-center">
+      <img class="logo" src="./Pulparambil white logo.png" alt="">
     </div>
     <!-- Navbar -->
     <nav class="d-flex justify-content-center">
       <div id="navbar">
         <ul class="navbar-nav  ">
           <li class="nav-item d-flex align-items-center">
-            <div class="btn btn-outline btn-sm" style="color: #dbbd75;font-size: medium;" target="_blank"><span
-                id='time'></span></div>
+            <div class="btn btn-outline btn-sm" target="_blank"><span id='time'></span></div>
           </li>
         </ul>
       </div>
@@ -249,7 +164,7 @@
         <h1 class="d-flex justify-content-center align-items-center" style="color: #dbbd75;">Latest News</h1>
         <div class="card200 align-items-center">
           <div class="cb">
-            <p class="text" id="displayNews"></p>
+            <p class="text" id="displayNews">fdfgggggggg</p>
           </div>
         </div>
       </div>
@@ -471,13 +386,13 @@
 
   </script>
 
-  <script>
+  <!-- <script>
     // Check if the screen width is below a certain threshold (e.g., 1000 pixels)
     if (window.innerWidth > 900) {
       // Redirect users from mobile and tablet devices to a different page or show an error message
       window.location.href = '../../../pages/error.html'; // Redirect to a mobile error page
     }
-  </script>
+  </script> -->
 
 
 
