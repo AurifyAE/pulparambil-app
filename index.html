@@ -358,23 +358,68 @@
       </div>
     </div>
 
-    <div class="card-table">
-      <table>
-        <thead>
-          <tr>
-            <th colspan="2">COMMODITY</th>
-            <th>UNIT</th>
-            <th>BUY (<span id="currencySymbol">AED</span>)</th>
-            <th>SELL (<span id="currencySymbol">AED</span>)</th>
-          </tr>
-          <tr style="height: 8px;background-color: transparent;"></tr>
-        </thead>
-
-        <tbody id="tableBodyTV">
-          <!-- Table body content will be dynamically updated here -->
-        </tbody>
-      </table>
+    <!-- GOLD -->
+    <div class="data">
+      <div class="label">
+        <p>Gold</p>
+        <h5 style="color: #dbbd75;">oz</h5>
+      </div>
+      <div class="buy-sell">
+        <div class="form-control input-box" id="goldInputLow"></div>
+        <div>
+          <i class="fa-solid fa-caret-down icon" style="color: red;"></i>
+          <label id="lowLabelGold">0</label>
+        </div>
+      </div>
+      <div class="buy-sell">
+        <div class="form-control input-box" id="goldInputHigh"></div>
+        <div>
+          <i class="fa-solid fa-caret-up icon" style="color: green;"></i>
+          <label id="highLabelGold">0</label>
+        </div>
+      </div>
     </div>
+
+    <!-- silver -->
+    <div class="data">
+      <div class="label">
+        <p>Silver</p>
+        <h5 style="color: #dbbd75;">oz</h5>
+      </div>
+      <div class="buy-sell">
+        <div class="form-control input-box" id="silverInputLow"></div>
+        <div>
+          <i class="fa-solid fa-caret-down icon" style="color: red;"></i>
+          <label id="lowLabelSilver">0</label>
+        </div>
+      </div>
+      <div class="buy-sell">
+        <div class="form-control input-box" id="silverInputHigh"></div>
+        <div>
+          <i class="fa-solid fa-caret-up icon" style="color: green;"></i>
+          <label id="highLabelSilver">0</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-table" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">COMMODITY</th>
+          <th>UNIT</th>
+          <th>BUY (<span id="currencySymbol">AED</span>)</th>
+          <th>SELL (<span id="currencySymbol">AED</span>)</th>
+        </tr>
+        <tr style="height: 8px;background-color: transparent;"></tr>
+      </thead>
+
+      <tbody id="tableBodyTV">
+        <!-- Table body content will be dynamically updated here -->
+      </tbody>
+    </table>
+  </div>
   </div>
 
 
