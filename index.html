@@ -138,6 +138,15 @@
       padding: 20px;
     }
 
+    .input-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      font-weight: 600;
+      padding: 10px;
+    }
+
     .data .buy-sell label {
       font-size: 25px;
     }
@@ -227,6 +236,15 @@
         margin-bottom: 6px;
       }
 
+      .input-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px;
+      }
+
       .data {
         padding: 10px 15px;
       }
@@ -294,8 +312,55 @@
     </div>
   </nav>
   <!-- End Navbar -->
+
+  <!-- Demo Layout -->
+  <div>
+    <div style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600;">
+      SPOT RATE USD
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      GOLD OZ
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      <div class=" form-control input-box" id="goldInputLow"></div>
+      <div class="input-box" id="lowLabelGold"></div>
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      <div class=" form-control input-box" id="goldInputHigh"></div>
+      <div class="input-box" id="highLabelGold"></div>
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      SILVER OZ
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      <div class=" form-control input-box" id="silverInputLow"></div>
+      <div class="input-box" id="lowLabelSilver"></div>
+    </div>
+
+    <div
+      style="background-color: #dbbd75; padding: 5px; text-align: center; color: #fff; font-weight: 600; margin-top: 15px;">
+      <div class=" form-control input-box" id="silverInputHigh"></div>
+      <div class="input-box" id="highLabelSilver"></div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
   <div class="container-fluid pt-0">
-    <div class="row">
+    <div class="row" style="display: none;">
       <div class="symbols" style="background-color:  #dbbd75;">
         <div></div>
         <div class="buy-sell-label">
@@ -358,50 +423,9 @@
       </div>
     </div>
 
-    <!-- GOLD -->
-    <div class="data">
-      <div class="label">
-        <p>Gold</p>
-        <h5 style="color: #dbbd75;">oz</h5>
-      </div>
-      <div class="buy-sell">
-        <div class="form-control input-box">3528.55</div>
-        <div>
-          <i class="fa-solid fa-caret-down icon" style="color: red;"></i>
-          <label id="lowLabelGold">0</label>
-        </div>
-      </div>
-      <div class="buy-sell">
-        <div class="form-control input-box">2587.58</div>
-        <div>
-          <i class="fa-solid fa-caret-up icon" style="color: green;"></i>
-          <label id="highLabelGold">0</label>
-        </div>
-      </div>
-    </div>
-
-    <!-- silver -->
-    <div class="data">
-      <div class="label">
-        <p>Silver</p>
-        <h5 style="color: #dbbd75;">oz</h5>
-      </div>
-      <div class="buy-sell">
-        <div class="form-control input-box">5897.58</div>
-        <div>
-          <i class="fa-solid fa-caret-down icon" style="color: red;"></i>
-          <label id="lowLabelSilver">0</label>
-        </div>
-      </div>
-      <div class="buy-sell">
-        <div class="form-control input-box">2583.55</div>
-        <div>
-          <i class="fa-solid fa-caret-up icon" style="color: green;"></i>
-          <label id="highLabelSilver">0</label>
-        </div>
-      </div>
-    </div>
   </div>
+
+
 
   <div class="card-table" style="display: none;">
     <table>
